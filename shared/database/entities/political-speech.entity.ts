@@ -11,7 +11,7 @@ export class PoliticalSpeech {
   @Column('varchar')
   public topic: string;
 
-  @Column('varchar')
+  @Column('timestamptz')
   public date: string;
 
   @Column('int')
