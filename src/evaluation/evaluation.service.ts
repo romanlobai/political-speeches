@@ -77,9 +77,9 @@ export class EvaluationService {
     `);
 
     return {
-      mostSpeeches: mostSpeeches?.speaker,
-      mostSecurity: mostSecurity?.speaker,
-      leastWordy: leastWordy?.speaker,
+      mostSpeeches: mostSpeeches?.speaker || null,
+      mostSecurity: mostSecurity?.speaker || null,
+      leastWordy: leastWordy?.speaker || null,
     };
   }
 
